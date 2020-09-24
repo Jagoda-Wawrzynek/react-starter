@@ -7,10 +7,8 @@ import Column from '../Column/Column.js';
 class List extends React.Component {
 
   static propTypes = {
-    title: PropTypes.node,
+    title: PropTypes.node.isRequired,
     children: PropTypes.node,
-    image: PropTypes.string,
-    columns: PropTypes.array,
   }
 
   render() {
