@@ -1,1 +1,1 @@
-https://git.heroku.com/react-to-library.git
+https://react-to-library.herokuapp.com/
