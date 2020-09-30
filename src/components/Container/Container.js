@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './Container.scss';
 import PropTypes from 'prop-types';
 
-const Container = () => (
+const Container = ({children}) => (
   <div className={styles.component}>
-    <p></p>
+    {children}
   </div>
 );
 
