@@ -1,13 +1,16 @@
 import React from 'react';
 import Container from '../Container/Container';
-import Hero from '../Hero/Hero';
+import {dataFAQ} from '../../data/dataStore';
+
 
 class FAQ extends React.Component {
   render() {
     return (
       <Container >
-        <Hero />
-      </Container>   
+        <h2>{dataFAQ.title}</h2>
+        <img src={dataFAQ.image}></img>
+        <p>{dataFAQ.content}</p>  
+      </Container>     
     );
   }
 }
