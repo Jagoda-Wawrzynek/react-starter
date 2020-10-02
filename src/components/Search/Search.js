@@ -21,9 +21,9 @@ class Search extends React.Component {
   }
 
   state = {
-    value: this.props.searchString,
+    value: this.props.searchString || '',
   }
-
+  
   handleChange(event){
     this.setState({
       value: event.target.value,

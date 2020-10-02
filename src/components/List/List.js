@@ -9,6 +9,9 @@ import Creator from '../Creator/Creator';
 import Container from '../Container/Container';
 
 class List extends React.Component {
+  state = {
+    columns: this.props.columns || [],
+  };
 
   static propTypes = {
     title: PropTypes.node.isRequired,
@@ -18,9 +21,9 @@ class List extends React.Component {
     addColumn: PropTypes.func,
   }
 
-  static defaultProps= { 
-    description: settings.defaultListDescription,
-  }
+  //static defaultProps= { 
+    //description: settings.defaultListDescription,
+  //}
   
   render() {
     const {title, image, description, columns, addColumn} = this.props;
